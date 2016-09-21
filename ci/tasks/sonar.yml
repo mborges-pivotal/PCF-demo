@@ -10,12 +10,13 @@ image_resource:
 params:
   MAVEN_OPTS:
   MAVEN_CONFIG:
+  SONAR_HOST_URL:
 
 inputs:
   - name: pcfdemo
 
 run:
-  path: pcfdemo/ci/tasks/unit.sh
+  path: pcfdemo/ci/tasks/sonar.sh
   args: [
     --input-dir, pcfdemo
   ]

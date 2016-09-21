@@ -27,4 +27,4 @@ fi
 
 cd $inputDir
 
-./mvnw sonar:sonar
+./mvnw sonar:sonar -Dsonar.host.url=$SONAR_HOST_URL
